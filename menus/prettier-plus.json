@@ -1,0 +1,34 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Format with Prettier",
+        "command": "prettier-plus:format"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "Prettier Plus",
+          "submenu": [
+            {
+              "label": "Format",
+              "command": "prettier-plus:format"
+            },
+            {
+              "label": "Debug",
+              "command": "prettier-plus:debug"
+            },
+            {
+              "label": "Toggle Format on Save",
+              "command": "prettier-plus:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

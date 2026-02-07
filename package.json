@@ -1,0 +1,97 @@
+{
+  "name": "prettier-plus",
+  "main": "./lib/main.js",
+  "version": "0.0.0",
+  "description": "Pulsar plugin for formatting using prettier",
+  "keywords": [
+    "javascript",
+    "prettier"
+  ],
+  "repository": "https://github.com/asiloisad/pulsar-prettier-plus",
+  "license": "MIT",
+  "activationHooks": [
+    "core:loaded-shell-environment"
+  ],
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "minimatch": "^9.0.0",
+    "prettier": "2.5.1"
+  },
+  "configSchema": {
+    "formatOnSaveOptions": {
+      "title": "Format on Save",
+      "order": 4,
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "title": "Format Files on Save",
+          "description": "Automatically format entire file when saving.",
+          "type": "boolean",
+          "default": false,
+          "order": 1
+        },
+        "respectEslintignore": {
+          "title": "Respect `.eslintignore`",
+          "description": "Skip files listed in `.eslintignore` when formatting on save.",
+          "type": "boolean",
+          "default": true,
+          "order": 2
+        },
+        "showInStatusBar": {
+          "title": "Show in Status Bar",
+          "description": "Show format-on-save status in the status bar.",
+          "type": "boolean",
+          "default": false,
+          "order": 3
+        },
+        "excludedGlobs": {
+          "title": "Excluded Globs",
+          "description": "Comma-separated list of file globs to exclude from formatting on save. Takes precedence over scopes.",
+          "type": "array",
+          "default": [],
+          "order": 4
+        },
+        "whitelistedGlobs": {
+          "title": "Included Globs",
+          "description": "Comma-separated list of file globs to always format on save. Takes precedence over excluded globs. If non-empty, only matching files will be formatted.",
+          "type": "array",
+          "default": [],
+          "order": 5
+        },
+        "isDisabledIfNotInPackageJson": {
+          "title": "Require Prettier in Dependencies",
+          "description": "Only format on save when `prettier` is in your project's `package.json` dependencies.",
+          "type": "boolean",
+          "default": false,
+          "order": 6
+        },
+        "isDisabledIfNoConfigFile": {
+          "title": "Require Prettier Config",
+          "description": "Only format on save when a Prettier config file (`.prettierrc`, `prettier.config.js`, or `prettier` key in `package.json`) is found.",
+          "type": "boolean",
+          "default": false,
+          "order": 7
+        },
+        "ignoreNodeModules": {
+          "title": "Ignore `node_modules`",
+          "description": "Skip files inside `node_modules` when formatting on save.",
+          "type": "boolean",
+          "default": true,
+          "order": 8
+        }
+      }
+    }
+  },
+  "consumedServices": {
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "consumeStatusBar"
+      }
+    },
+    "linter-indie": {
+      "versions": {
+        "2.0.0": "consumeIndie"
+      }
+    }
+  }
+}
