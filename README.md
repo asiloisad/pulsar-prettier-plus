@@ -2,6 +2,8 @@
 
 Pulsar plugin for formatting files using [Prettier](https://prettier.io).
 
+Fork of [prettier-atom](https://github.com/prettier/prettier-atom).
+
 ## Features
 
 - **Format on command**: Format the active editor via `prettier-plus:format`.
@@ -11,6 +13,7 @@ Pulsar plugin for formatting files using [Prettier](https://prettier.io).
 - **Prettier config support**: Reads `.prettierrc`, `prettier.config.js`, and `package.json` prettier config automatically.
 - **Status bar indicator**: Optional status bar tile showing format-on-save state.
 - **Linter integration**: Reports Prettier errors via the `linter` service.
+- **Lightweight**: Simplified fork with minimal dependencies — no bundled ESLint or Stylelint, no forced packages.
 
 ## Installation
 
