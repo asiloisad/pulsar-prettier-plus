@@ -18,6 +18,13 @@
     "prettier": "2.5.1"
   },
   "configSchema": {
+    "debug": {
+      "title": "Debug Mode",
+      "description": "Log Prettier detection and resolution info to developer console.",
+      "type": "boolean",
+      "default": false,
+      "order": 1
+    },
     "formatOnSaveOptions": {
       "title": "Format on Save",
       "order": 4,
