@@ -1,18 +1,19 @@
 module.exports = {
-  extends: ['eslint:recommended'],
+  extends: ["eslint:recommended"],
   parserOptions: {
     ecmaVersion: 2018,
-    sourceType: 'script',
+    sourceType: "script",
   },
   globals: {
-    atom: 'readonly',
+    atom: "readonly",
   },
   env: {
     node: true,
     browser: true,
+    es6: true,
   },
   rules: {
-    'no-constant-condition': ['error', { checkLoops: false }],
-    'no-console': ['error', { allow: ['warn', 'error'] }],
+    "no-constant-condition": ["error", { checkLoops: false }],
+    "no-console": ["error", { allow: ["warn", "error"] }],
   },
 };
