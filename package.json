@@ -13,9 +13,8 @@
     "core:loaded-shell-environment"
   ],
   "dependencies": {
-    "lodash": "^4.17.23",
     "minimatch": "^10.1.2",
-    "prettier": "2.5.1"
+    "prettier": "^3.5.3"
   },
   "configSchema": {
     "debug": {
