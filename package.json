@@ -1,7 +1,7 @@
 {
   "name": "prettier-plus",
   "main": "./lib/main.js",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Pulsar plugin for formatting using prettier",
   "keywords": [
     "javascript",
