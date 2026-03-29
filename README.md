@@ -16,7 +16,7 @@ Fork of [prettier-atom](https://github.com/prettier/prettier-atom).
 - **Linter integration**: Reports Prettier errors via the `linter` service.
 - **Debug mode**: Enable `Debug Mode` in settings to log Prettier detection, resolution paths, and formatting details to the developer console.
 - **Prettier 3**: Ships with Prettier 3 and runs it in a child process to avoid Electron compatibility issues.
-- **Lightweight**: Simplified fork with minimal dependencies — no bundled ESLint or Stylelint, no lodash, no forced packages.
+- **Lightweight**: Simplified fork with minimal dependencies. No bundled ESLint or Stylelint, no lodash, no forced packages.
 
 ## Installation
 
@@ -39,10 +39,10 @@ Commands available in `atom-text-editor`:
 Prettier runs in a **child process** (`child_process.fork`) so that Prettier 3's async API works correctly inside Electron's renderer. The child process is spawned lazily on first format and shared across all editors.
 
 Prettier resolution order:
-1. **Local** — walks up from the file's directory (bounded by the project root) looking for `node_modules/prettier/index.cjs` or `index.js`.
-2. **Global** — checks global npm and Yarn module paths.
-3. **Bundled** — falls back to the Prettier version shipped with this package.
+1. **Local**: walks up from the file's directory (bounded by the project root) looking for `node_modules/prettier/index.cjs` or `index.js`.
+2. **Global**: checks global npm and Yarn module paths.
+3. **Bundled**: falls back to the Prettier version shipped with this package.
 
 ## Contributing
 
-Got ideas to make this package better, found a bug, or want to help add new features? Just drop your thoughts on GitHub — any feedback's welcome!
+Got ideas to make this package better, found a bug, or want to help add new features? Just drop your thoughts on GitHub. Any feedback is welcome!
