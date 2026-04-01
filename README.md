@@ -6,8 +6,8 @@ Fork of [prettier-atom](https://github.com/prettier/prettier-atom).
 
 ## Features
 
-- **Format on command**: Format the active editor via `prettier-plus:format` (`Ctrl+Alt+F`).
-- **Format project**: Format all files in open projects via `prettier-plus:format-project` (`Ctrl+Alt+Shift+F`). Walks every project directory, skips files that Prettier doesn't handle or that `.prettierignore` excludes, and writes back only changed files. Progress is reported in a notification.
+- **Format on command**: Format the active editor via `prettier-plus:format`.
+- **Format project**: Format all files in open projects via `prettier-plus:format-project`. Walks every project directory, skips files that Prettier doesn't handle or that `.prettierignore` excludes, and writes back only changed files. Progress is reported in a notification.
 - **Format on save**: Automatically format files when saving, with fine-grained control over which files to include or exclude.
 - **Glob filtering**: Include or exclude files from format-on-save using glob patterns.
 - **Respect `.eslintignore`**: Optionally skip files listed in `.eslintignore`.
@@ -26,13 +26,13 @@ To install `prettier-plus` search for [prettier-plus](https://web.pulsar-edit.de
 
 Commands available in `atom-workspace`:
 
-- `prettier-plus:format-project`: format all files in open projects,
+- `prettier-plus:format-project`: <kbd>Ctrl+Alt+Shift+F</kbd> format all files in open projects,
 - `prettier-plus:toggle`: toggle format on save,
 - `prettier-plus:debug`: show debug information.
 
 Commands available in `atom-text-editor`:
 
-- `prettier-plus:format`: format the active editor.
+- `prettier-plus:format`: <kbd>Ctrl+Alt+F</kbd> format the active editor.
 
 ## How it works
 
