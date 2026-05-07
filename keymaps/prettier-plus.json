@@ -3,6 +3,6 @@
     "ctrl-alt-f": "prettier-plus:format"
   },
   "atom-workspace": {
-    "ctrl-alt-shift-f": "prettier-plus:format-project"
+    "ctrl-alt-shift-f": "prettier-plus:format-projects"
   }
 }

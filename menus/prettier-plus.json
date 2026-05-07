@@ -19,8 +19,12 @@
               "command": "prettier-plus:format"
             },
             {
-              "label": "Format Project",
-              "command": "prettier-plus:format-project"
+              "label": "Format Projects",
+              "command": "prettier-plus:format-projects"
+            },
+            {
+              "label": "Format Selected",
+              "command": "prettier-plus:format-selected"
             },
             {
               "label": "Debug",

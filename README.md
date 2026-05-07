@@ -7,7 +7,8 @@ Fork of [prettier-atom](https://github.com/prettier/prettier-atom).
 ## Features
 
 - **Format on command**: Format the active editor via `prettier-plus:format`.
-- **Format project**: Format all files in open projects via `prettier-plus:format-project`. Walks every project directory, skips files that Prettier doesn't handle or that `.prettierignore` excludes, and writes back only changed files. Progress is reported in a notification.
+- **Format projects**: Format all files in open projects via `prettier-plus:format-projects`. Walks every project directory, skips files that Prettier doesn't handle or that `.prettierignore` excludes, and writes back only changed files. Progress is reported in a notification.
+- **Format selected**: Format selected files or folders from the tree view via `prettier-plus:format-selected`.
 - **Format on save**: Automatically format files when saving, with fine-grained control over which files to include or exclude.
 - **Glob filtering**: Include or exclude files from format-on-save using glob patterns.
 - **Respect `.eslintignore`**: Optionally skip files listed in `.eslintignore`.
@@ -26,7 +27,8 @@ To install `prettier-plus` search for [prettier-plus](https://web.pulsar-edit.de
 
 Commands available in `atom-workspace`:
 
-- `prettier-plus:format-project`: <kbd>Ctrl+Alt+Shift+F</kbd> format all files in open projects,
+- `prettier-plus:format-projects`: <kbd>Ctrl+Alt+Shift+F</kbd> format all files in open projects,
+- `prettier-plus:format-selected`: format selected files or folders from the tree view,
 - `prettier-plus:toggle`: toggle format on save,
 - `prettier-plus:debug`: show debug information.
 
@@ -39,6 +41,7 @@ Commands available in `atom-text-editor`:
 Prettier runs in a **child process** (`child_process.fork`) so that Prettier 3's async API works correctly inside Electron's renderer. The child process is spawned lazily on first format and shared across all editors.
 
 Prettier resolution order:
+
 1. **Local**: walks up from the file's directory (bounded by the project root) looking for `node_modules/prettier/index.cjs` or `index.js`.
 2. **Global**: checks global npm and Yarn module paths.
 3. **Bundled**: falls back to the Prettier version shipped with this package.

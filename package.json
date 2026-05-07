@@ -103,6 +103,11 @@
       "versions": {
         "2.0.0": "consumeIndie"
       }
+    },
+    "tree-view": {
+      "versions": {
+        "^1.0.0": "consumeTreeView"
+      }
     }
   }
 }
