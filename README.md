@@ -27,14 +27,17 @@ To install `prettier-plus` search for [prettier-plus](https://web.pulsar-edit.de
 
 Commands available in `atom-workspace`:
 
-- `prettier-plus:format-projects`: <kbd>Ctrl+Alt+Shift+F</kbd> format all files in open projects,
-- `prettier-plus:format-selected`: format selected files or folders from the tree view,
+- `prettier-plus:format-projects`: format all files in open projects,
 - `prettier-plus:toggle`: toggle format on save,
-- `prettier-plus:debug`: show debug information.
+- `prettier-plus:show-diagnostics`: show diagnostic information.
 
 Commands available in `atom-text-editor`:
 
 - `prettier-plus:format`: <kbd>Ctrl+Alt+F</kbd> format the active editor.
+
+Commands available in `.tree-view`:
+
+- `prettier-plus:format-selected`: format selected files or folders from the tree view.
 
 ## How it works
 

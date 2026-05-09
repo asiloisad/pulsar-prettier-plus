@@ -27,8 +27,8 @@
               "command": "prettier-plus:format-selected"
             },
             {
-              "label": "Debug",
-              "command": "prettier-plus:debug"
+              "label": "Show Diagnostics",
+              "command": "prettier-plus:show-diagnostics"
             },
             {
               "label": "Toggle Format on Save",

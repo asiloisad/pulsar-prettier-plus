@@ -1,8 +1,5 @@
 {
   "atom-text-editor": {
     "ctrl-alt-f": "prettier-plus:format"
-  },
-  "atom-workspace": {
-    "ctrl-alt-shift-f": "prettier-plus:format-projects"
   }
 }
